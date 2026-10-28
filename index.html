@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of a security researcher and systems engineer working on container security, runtime evidence, and automated security policy generation.">
+  <meta name="theme-color" content="#f4f3ef">
+  <title>Security / Systems — Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Go to home">
+        <span class="brand-mark" aria-hidden="true">S<span>/</span>S</span>
+        <span class="brand-name">SECURITY <span>/</span> SYSTEMS</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="menu-toggle-lines" aria-hidden="true"></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="#top">Home</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#publications">Publications</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> SECURITY RESEARCHER · SYSTEMS ENGINEER</p>
+        <h1 id="hero-title">Building secure systems<br>with <span class="headline-accent">runtime evidence.</span></h1>
+        <p class="hero-summary">I work on container security and automated security policy generation, combining runtime observations, deployment context, and language-model-based inference.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore selected work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#about">More about me <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><span class="meta-label">FOCUS</span><span>Container security · Systems</span></div>
+          <div><span class="meta-label">BACKGROUND</span><span>Ph.D. · KAIST</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Conceptual workflow from runtime evidence to security policy validation">
+        <div class="visual-topline"><span>POLICY ENGINEERING</span><span>01 — 03</span></div>
+        <div class="workflow">
+          <div class="workflow-node">
+            <span class="node-index">01</span>
+            <span class="node-icon icon-pulse" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <span class="node-title">Runtime<br>evidence</span>
+            <span class="node-caption">Observe</span>
+          </div>
+          <span class="workflow-connector" aria-hidden="true"><span>→</span></span>
+          <div class="workflow-node node-featured">
+            <span class="node-index">02</span>
+            <span class="node-icon icon-layers" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="node-title">Policy<br>inference</span>
+            <span class="node-caption">Generate</span>
+          </div>
+          <span class="workflow-connector" aria-hidden="true"><span>→</span></span>
+          <div class="workflow-node">
+            <span class="node-index">03</span>
+            <span class="node-icon icon-check" aria-hidden="true">✓</span>
+            <span class="node-title">Policy<br>validation</span>
+            <span class="node-caption">Verify</span>
+          </div>
+        </div>
+        <div class="visual-bottomline"><span>CONTEXT-AWARE SECURITY</span><span class="visual-square" aria-hidden="true"></span></div>
+        <div class="visual-note"><span class="note-rule"></span><span>A systems view of security policy automation</span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip section-shell" aria-label="Portfolio introduction">
+      <p class="strip-label">WHAT I DO</p>
+      <p class="strip-copy">From observing how software behaves at runtime to designing practical policies that keep workloads secure <span>— and available.</span></p>
+      <span class="strip-index">01 / 04</span>
+    </section>
+
+    <section class="section section-shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELECTED WORK <span class="eyebrow-rule"></span></p>
+          <h2 id="projects-title">Projects<span class="heading-period">.</span></h2>
+          <p class="section-lede">Research systems built around a shared question: how can we construct useful security policies with incomplete execution knowledge?</p>
+        </div>
+        <span class="section-number">01</span>
+      </div>
+
+      <div class="project-toolbar" aria-label="Filter projects">
+        <span class="toolbar-label">FILTER BY</span>
+        <div class="filter-group" role="group" aria-label="Project category">
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All work <span>03</span></button>
+          <button class="filter-button" type="button" data-filter="runtime" aria-pressed="false">Runtime evidence</button>
+          <button class="filter-button" type="button" data-filter="llm" aria-pressed="false">LLM & policy</button>
+          <button class="filter-button" type="button" data-filter="architecture" aria-pressed="false">Architecture</button>
+        </div>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card project-card-large" data-categories="runtime">
+          <a class="project-card-link" href="projects/beacon.html" aria-label="Read about BeaCon">
+            <div class="project-visual visual-beacon">
+              <div class="visual-card-label">RUNTIME OBSERVATION / 01</div>
+              <div class="beacon-diagram" aria-hidden="true">
+                <div class="beacon-column"><span class="diagram-chip">workload</span><span class="diagram-line"></span><span class="diagram-chip">syscall events</span></div>
+                <span class="diagram-arrow">→</span>
+                <div class="beacon-core"><span class="core-ring"></span><span class="core-label">eBPF</span></div>
+                <span class="diagram-arrow">→</span>
+                <div class="beacon-column"><span class="diagram-chip accent-chip">evidence</span><span class="diagram-line"></span><span class="diagram-chip">policy inputs</span></div>
+              </div>
+              <span class="visual-stamp">BC / 01</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-overline"><span>01 / RUNTIME EVIDENCE</span><span class="project-arrow">↗</span></div>
+              <h3>BeaCon</h3>
+              <p>Collecting dynamic runtime evidence to support practical container security policy construction.</p>
+              <div class="tag-list"><span>eBPF</span><span>Container Security</span><span>Syscalls</span></div>
+              <span class="card-cta">Explore project <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-categories="llm runtime">
+          <a class="project-card-link" href="projects/prompt2seccomp.html" aria-label="Read about Prompt2Seccomp">
+            <div class="project-visual visual-prompt">
+              <div class="visual-card-label">CONTEXT-AWARE INFERENCE / 02</div>
+              <div class="prompt-stack" aria-hidden="true">
+                <div class="prompt-layer layer-one"><span class="layer-dot"></span>Image metadata</div>
+                <div class="prompt-layer layer-two"><span class="layer-dot"></span>Deployment context</div>
+                <div class="prompt-layer layer-three"><span class="layer-dot"></span>LLM inference</div>
+                <div class="prompt-output"><span>seccomp</span><span class="output-check">✓</span></div>
+              </div>
+              <span class="visual-stamp">P2S / 02</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-overline"><span>02 / LLM & POLICY</span><span class="project-arrow">↗</span></div>
+              <h3>Prompt2Seccomp</h3>
+              <p>Inferring container syscall policies from application metadata and deployment context with an LLM.</p>
+              <div class="tag-list"><span>LLMs</span><span>Seccomp</span><span>Policy Validation</span></div>
+              <span class="card-cta">Explore project <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project-card" data-categories="architecture">
+          <a class="project-card-link" href="projects/archon.html" aria-label="Read about Archon">
+            <div class="project-visual visual-archon">
+              <div class="visual-card-label">REQUIREMENT-DRIVEN DESIGN / 03</div>
+              <div class="archon-diagram" aria-hidden="true">
+                <div class="archon-top">Requirements</div>
+                <div class="archon-branch"><i></i><i></i><i></i></div>
+                <div class="archon-nodes"><span>Component A</span><span>Component B</span><span>Runtime</span></div>
+                <div class="archon-footer"><span>Evidence</span><b>→</b><span>Validation</span></div>
+              </div>
+              <span class="visual-stamp">AR / 03</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-overline"><span>03 / SYSTEM ARCHITECTURE</span><span class="project-arrow">↗</span></div>
+              <h3>Archon</h3>
+              <p>Exploring requirement-driven runtime evidence and architecture-aware security policy reasoning.</p>
+              <div class="tag-list"><span>System Design</span><span>Runtime Evidence</span></div>
+              <span class="card-cta">Explore project <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </article>
+      </div>
+      <p class="content-note"><span class="note-marker">NOTE</span> Project descriptions are a first draft. Add verified results, diagrams, and links before publishing.</p>
+    </section>
+
+    <section class="publication-section" id="publications" aria-labelledby="publications-title">
+      <div class="section-shell section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">RESEARCH OUTPUT <span class="eyebrow-rule"></span></p>
+            <h2 id="publications-title">Publications<span class="heading-period">.</span></h2>
+            <p class="section-lede">Selected research and related technical outputs.</p>
+          </div>
+          <span class="section-number">02</span>
+        </div>
+        <div class="publication-list">
+          <article class="publication-item">
+            <span class="publication-year">2026</span>
+            <div class="publication-main">
+              <div class="publication-type">JOURNAL · ACCEPTED</div>
+              <h3>BeaCon</h3>
+              <p>Computers &amp; Security</p>
+              <details class="publication-details">
+                <summary>Show publication details <span aria-hidden="true">＋</span></summary>
+                <div class="details-content"><p>Replace this short label with the paper's exact title, author list, DOI or publisher link, and a one- or two-sentence summary before publishing.</p></div>
+              </details>
+            </div>
+            <span class="publication-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="publication-item publication-placeholder">
+            <span class="publication-year">—</span>
+            <div class="publication-main">
+              <div class="publication-type">CONFERENCE / JOURNAL</div>
+              <h3>Add another publication</h3>
+              <p>Paper title · Venue · Year</p>
+            </div>
+            <span class="publication-arrow" aria-hidden="true">＋</span>
+          </article>
+        </div>
+        <p class="content-note"><span class="note-marker">EDIT</span> Confirm exact bibliographic metadata and add DOI / publisher links. Remove the placeholder row if it is not needed.</p>
+      </div>
+    </section>
+
+    <section class="section section-shell" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">BACKGROUND & APPROACH <span class="eyebrow-rule"></span></p>
+          <h2 id="about-title">About<span class="heading-period">.</span></h2>
+        </div>
+        <span class="section-number">03</span>
+      </div>
+      <div class="about-layout">
+        <div class="about-intro">
+          <p class="about-lead">I am a systems-oriented security researcher interested in translating observed software behavior and deployment requirements into practical security controls.</p>
+          <p>My doctoral work at KAIST focused on automating container security policy generation. Across my projects, I have worked on runtime observation, eBPF-based evidence collection, LLM-guided inference, and policy validation.</p>
+          <p class="content-note"><span class="note-marker">EDIT</span> Add a short personal introduction and clarify your individual contribution to each project.</p>
+        </div>
+        <aside class="about-side">
+          <div class="side-block">
+            <span class="side-label">EDUCATION</span>
+            <div class="side-entry"><strong>Ph.D. in Electrical Engineering</strong><span>KAIST</span><span class="side-muted">Graduated 2026 · Confirm exact degree wording</span></div>
+          </div>
+          <div class="side-block">
+            <span class="side-label">AREAS OF INTEREST</span>
+            <div class="interest-list"><span>Container Security</span><span>Linux Systems</span><span>eBPF</span><span>LLM for Security</span><span>Security Policy Generation</span></div>
+          </div>
+          <div class="side-block">
+            <span class="side-label">TOOLS & TECHNOLOGIES</span>
+            <div class="interest-list subdued-tags"><span>Python</span><span>C</span><span>Linux</span><span>Docker</span><span>eBPF</span><span>LLMs</span></div>
+          </div>
+          <a class="resume-link" href="#contact"><span class="resume-icon" aria-hidden="true">↓</span><span><strong>Curriculum Vitae</strong><small>Add a public PDF when ready</small></span><span class="resume-arrow">↗</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-shell contact-inner">
+        <div>
+          <p class="eyebrow">CONTACT <span class="eyebrow-rule"></span></p>
+          <h2 id="contact-title">Let's talk about<br><span class="headline-accent">systems and security.</span></h2>
+          <p class="contact-copy">For research, engineering, or collaboration inquiries, add your preferred contact details below.</p>
+        </div>
+        <div class="contact-links">
+          <div class="contact-row"><span class="contact-label">EMAIL</span><span class="contact-value">Add your email address</span></div>
+          <div class="contact-row"><span class="contact-label">GITHUB</span><span class="contact-value">Add your GitHub profile</span></div>
+          <div class="contact-row"><span class="contact-label">LINKEDIN</span><span class="contact-value">Add your LinkedIn profile (optional)</span></div>
+          <p class="content-note"><span class="note-marker">EDIT</span> Replace these placeholders with real links or remove rows you do not use.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <a class="footer-brand" href="#top">SECURITY <span>/</span> SYSTEMS</a>
+    <span>Designed for clarity, built for curiosity.</span>
+    <a class="back-top" href="#top">Back to top ↑</a>
+  </footer>
+</body>
+</html>

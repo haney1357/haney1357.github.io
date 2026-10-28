@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BeaCon: runtime evidence for container security policy construction.">
+  <meta name="theme-color" content="#f4f3ef"><title>BeaCon — Security / Systems</title>
+  <link rel="stylesheet" href="../assets/css/style.css"><script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="../index.html#top" aria-label="Go to home"><span class="brand-mark">S<span>/</span>S</span><span class="brand-name">SECURITY <span>/</span> SYSTEMS</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="menu-toggle-lines" aria-hidden="true"></span><span class="sr-only">Toggle navigation</span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a class="nav-link" href="../index.html#top">Home</a><a class="nav-link active" href="../index.html#projects">Projects</a><a class="nav-link" href="../index.html#publications">Publications</a><a class="nav-link" href="../index.html#about">About</a><a class="nav-contact" href="../index.html#contact">Get in touch <span>↗</span></a></nav>
+  </div></header>
+  <main id="main">
+    <section class="detail-hero section-shell">
+      <div class="breadcrumb"><a href="../index.html">Portfolio</a><span>/</span><a href="../index.html#projects">Projects</a><span>/</span><span>01</span></div>
+      <p class="eyebrow">PROJECT 01 · RUNTIME EVIDENCE</p>
+      <h1>BeaCon<span class="heading-period">.</span></h1>
+      <p class="detail-summary">A research system focused on collecting dynamic runtime evidence to support the construction of practical security policies for containerized applications.</p>
+      <div class="detail-meta"><div><span>Research area</span><span>Container security</span></div><div><span>Core technology</span><span>eBPF · Linux · Docker</span></div><div><span>Contribution</span><span>System design, implementation, evaluation</span></div></div>
+    </section>
+    <div class="detail-content section-shell">
+      <aside class="detail-sidebar"><span>ON THIS PAGE</span><a href="#problem">Problem</a><a href="#approach">Approach</a><a href="#implementation">Implementation</a><a href="#evaluation">Evaluation</a></aside>
+      <div class="detail-main">
+        <section class="detail-section" id="problem"><p class="eyebrow">01 / MOTIVATION</p><h2>Problem</h2><p>Container security policies must allow the system calls required by an application's real workload while limiting unnecessary kernel interfaces. A policy derived from a narrow or unrepresentative execution can omit required behavior, while an overly permissive policy can increase attack surface.</p><p>BeaCon investigates how dynamic runtime evidence can help policy construction reflect application behavior in representative execution environments.</p></section>
+        <section class="detail-section" id="approach"><p class="eyebrow">02 / APPROACH</p><h2>Approach</h2><div class="detail-workflow"><div><strong>Observe</strong><span>Capture runtime syscall behavior using eBPF-based instrumentation.</span></div><div><strong>Organize</strong><span>Represent the collected evidence for downstream policy construction.</span></div><div><strong>Inform</strong><span>Use dynamic evidence to help reason about required system-call behavior.</span></div></div><p>The system emphasizes evidence gathered from actual container execution rather than relying on image metadata or static assumptions alone.</p></section>
+        <section class="detail-section" id="implementation"><p class="eyebrow">03 / ENGINEERING</p><h2>Implementation</h2><ul><li>Designed and implemented a runtime evidence collection path for container workloads.</li><li>Used eBPF-based instrumentation to observe system-call activity.</li><li>Evaluated behavior across container images and workloads, with representative execution being an important experimental consideration.</li></ul><div class="detail-callout"><strong>Personal contribution:</strong> Replace or expand this section with the exact components you designed, implemented, and evaluated. Add an architecture figure or a link to a public artifact if available.</div></section>
+        <section class="detail-section" id="evaluation"><p class="eyebrow">04 / EVALUATION</p><h2>Evaluation</h2><p>Describe the evaluation dataset, workloads, baselines, metrics, key results, and limitations here. Include only figures that can be traced to the paper or experiment records.</p><p>The paper was accepted by <em>Computers &amp; Security</em>. Add the exact paper title, author list, year, publisher link, and DOI when available.</p></section>
+        <div class="detail-footer"><a href="../index.html#projects">← All projects</a><a href="../index.html#publications">Related publications ↗</a></div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer section-shell"><a class="footer-brand" href="../index.html#top">SECURITY <span>/</span> SYSTEMS</a><span>Designed for clarity, built for curiosity.</span><a class="back-top" href="#main">Back to top ↑</a></footer>
+</body></html>

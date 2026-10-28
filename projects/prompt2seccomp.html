@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prompt2Seccomp: LLM-based inference of container seccomp policies.">
+  <meta name="theme-color" content="#f4f3ef"><title>Prompt2Seccomp — Security / Systems</title>
+  <link rel="stylesheet" href="../assets/css/style.css"><script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="../index.html#top" aria-label="Go to home"><span class="brand-mark">S<span>/</span>S</span><span class="brand-name">SECURITY <span>/</span> SYSTEMS</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="menu-toggle-lines" aria-hidden="true"></span><span class="sr-only">Toggle navigation</span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a class="nav-link" href="../index.html#top">Home</a><a class="nav-link active" href="../index.html#projects">Projects</a><a class="nav-link" href="../index.html#publications">Publications</a><a class="nav-link" href="../index.html#about">About</a><a class="nav-contact" href="../index.html#contact">Get in touch <span>↗</span></a></nav>
+  </div></header>
+  <main id="main">
+    <section class="detail-hero section-shell">
+      <div class="breadcrumb"><a href="../index.html">Portfolio</a><span>/</span><a href="../index.html#projects">Projects</a><span>/</span><span>02</span></div>
+      <p class="eyebrow">PROJECT 02 · LLM & POLICY INFERENCE</p>
+      <h1>Prompt2Seccomp<span class="heading-period">.</span></h1>
+      <p class="detail-summary">An LLM-based approach to inferring container seccomp policies by combining application metadata, deployment context, and policy validation.</p>
+      <div class="detail-meta"><div><span>Research area</span><span>Container security · LLMs</span></div><div><span>Core technology</span><span>Python · LLM inference · Seccomp</span></div><div><span>Contribution</span><span>System design, implementation, experiments</span></div></div>
+    </section>
+    <div class="detail-content section-shell">
+      <aside class="detail-sidebar"><span>ON THIS PAGE</span><a href="#problem">Problem</a><a href="#approach">Approach</a><a href="#implementation">Implementation</a><a href="#evaluation">Evaluation</a></aside>
+      <div class="detail-main">
+        <section class="detail-section" id="problem"><p class="eyebrow">01 / MOTIVATION</p><h2>Problem</h2><p>Generating a useful seccomp allowlist is challenging because the required system calls depend on the application, its workload, runtime options, and deployment environment. Static metadata alone may not fully describe the behavior a deployment needs.</p><p>Prompt2Seccomp explores how language models can infer candidate policies when given richer information about the application and its deployment context.</p></section>
+        <section class="detail-section" id="approach"><p class="eyebrow">02 / APPROACH</p><h2>Approach</h2><div class="detail-workflow"><div><strong>Context</strong><span>Combine image metadata and available application documentation.</span></div><div><strong>Infer</strong><span>Use structured prompts and an LLM to generate a candidate seccomp policy.</span></div><div><strong>Validate</strong><span>Check deployment compatibility and refine the candidate where required.</span></div></div><p>The design separates context preparation, model-based policy inference, policy parsing and augmentation, and runtime-aware validation.</p></section>
+        <section class="detail-section" id="implementation"><p class="eyebrow">03 / ENGINEERING</p><h2>Implementation</h2><ul><li>Built a pipeline for collecting application and deployment metadata used in prompt construction.</li><li>Implemented policy parsing and baseline policy augmentation.</li><li>Integrated a semantic validation loop to check whether a generated policy supports the target runtime configuration.</li><li>Evaluated how model configuration and pipeline components affect policy quality.</li></ul><div class="detail-callout"><strong>Personal contribution:</strong> Expand with the exact model configuration, fine-tuning strategy, validator implementation, and which components you personally authored.</div></section>
+        <section class="detail-section" id="evaluation"><p class="eyebrow">04 / EVALUATION</p><h2>Evaluation</h2><p>Present the dataset split, baseline, precision/recall trade-offs, ablation results, validation iterations, and reproducibility analysis. Explain what the metrics mean for both security and workload availability.</p><p>Insert the paper link and use the final, verified numbers from the version you intend to share publicly.</p></section>
+        <div class="detail-footer"><a href="../index.html#projects">← All projects</a><a href="../index.html#publications">Related publications ↗</a></div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer section-shell"><a class="footer-brand" href="../index.html#top">SECURITY <span>/</span> SYSTEMS</a><span>Designed for clarity, built for curiosity.</span><a class="back-top" href="#main">Back to top ↑</a></footer>
+</body></html>
