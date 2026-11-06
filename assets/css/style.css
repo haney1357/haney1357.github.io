@@ -497,6 +497,17 @@ html[data-theme="dark"] .profile-photo-frame {
 /* --------------------------------------------------------------------------
    Home: introduction
    -------------------------------------------------------------------------- */
+.intro-section {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-deep);
+}
+
+.intro-section .section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
 .intro {
   padding-top: 8px;
 }
@@ -1356,6 +1367,12 @@ html[data-theme="dark"] .visual-archon {
   .detail-content {
     grid-template-columns: 150px minmax(0, 1fr);
     gap: 35px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
