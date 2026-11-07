@@ -1,135 +1,61 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Verikube: runtime evidence for container security policy construction.">
-        <meta name="theme-color" content="#f4f3ef">
-        <title>Haney Kang — Verikube</title>
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <script src="../assets/js/main.js" defer>
-        </script>
-    </head>
-
-    <body>
-        <a class="skip-link" href="#main">Skip to content</a>
-
-        <header class="site-header">
-            <div class="header-inner">
-                <a class="brand" href="../index.html#top" aria-label="Go to home">
-                    <span class="brand-name">HANEY KANG</span>
-                </a>
-
-                <div class="header-controls">
-                    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-                        <a class="nav-link" href="../index.html#top">Home</a>
-                        <a class="nav-link active" href="../index.html#projects">Projects</a>
-                        <a class="nav-link" href="../index.html#publications">Publications</a>
-                        <a class="nav-link" href="../index.html#about">About</a>
-                        <a class="nav-contact" href="../index.html#contact">Get in touch <span>↗</span></a>
-                    </nav>
-
-                    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme">
-                        <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                            <circle cx="12" cy="12" r="4"></circle>
-                            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
-                        </svg>
-                        <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                            <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.6 8.6 0 1 0 20.2 15.4Z"></path>
-                        </svg>
-                        <span class="theme-toggle-label">Light</span>
-
-                    </button>
-                    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
-                        <span class="menu-toggle-lines" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </header>
-
-        <main id="main">
-            <section class="detail-hero section-shell">
-                <h1>Verikube<span class="heading-period">.</span></h1>
-                <h3>Automated Container Network Policy Verification</h4>
-                <p class="detail-summary">VeriKube introduces a graph-based representation of container network policies to improve the efficiency of policy verification. It supports the complex semantics of Cilium policies while significantly reducing memory consumption and verification overhead.</p>
-                <div class="detail-meta">
-                    <div>
-                        <span>Research Focus</span>
-                        <span>TODO</span>
-                    </div>
-                    <div>
-                        <span>Methods & technology</span>
-                        <span>TODO</span>
-                    </div>
-                    <div>
-                        <span>Contribution</span>
-                        <span>TODO</span>
-                    </div>
-                </div>
-            </section>
-            <div class="detail-content section-shell">
-                <aside class="detail-sidebar">
-                    <span>ON THIS PAGE</span>
-                    <a href="#problem">Problem</a>
-                    <a href="#approach">Approach</a>
-                    <a href="#implementation">Implementation</a>
-                    <a href="#evaluation">Evaluation</a>
-                </aside>
-                <div class="detail-main">
-                    <section class="detail-section" id="problem">
-                        <p class="eyebrow">01 / MOTIVATION</p>
-                        <h2>Problem</h2>
-                        <p>TODO.</p>
-                        <p>TODO.</p>
-                    </section>
-                    <section class="detail-section" id="approach">
-                    <p class="eyebrow">02 / APPROACH</p>
-                    <h2>Approach</h2>
-                    <div class="detail-workflow">
-                        <div>
-                            <strong>Observe</strong>
-                            <span>TODO.</span>
-                        </div>
-                        <div>
-                            <strong>Organize</strong>
-                            <span>TODO.</span>
-                        </div>
-                        <div>
-                            <strong>Inform</strong>
-                            <span>TODO.</span>
-                        </div>
-                    </div>
-                    <p>TODO.</p>
-                    </section>
-                    <section class="detail-section" id="implementation">
-                        <p class="eyebrow">03 / ENGINEERING</p>
-                        <h2>Implementation</h2>
-                        <ul>
-                            <li>Designed and implemented a runtime evidence collection path for container workloads.</li>
-                            <li>Used eBPF-based instrumentation to observe system-call activity.</li>
-                            <li>Evaluated behavior across container images and workloads, with representative execution being an important experimental consideration.</li>
-                        </ul>
-                        <div class="detail-callout">
-                            <strong>Personal contribution:</strong> Replace or expand this section with the exact components you designed, implemented, and evaluated. Add an architecture figure or a link to a public artifact if available.
-                        </div>
-                    </section>
-                    <section class="detail-section" id="evaluation">
-                        <p class="eyebrow">04 / EVALUATION</p>
-                        <h2>Evaluation</h2>
-                        <p>Describe the evaluation dataset, workloads, baselines, metrics, key results, and limitations here. Include only figures that can be traced to the paper or experiment records.</p>
-                        <p>The paper was accepted by <em>Computers &amp; Security</em>. Add the exact paper title, author list, year, publisher link, and DOI when available.</p>
-                    </section>
-                    <div class="detail-footer">
-                        <a href="../index.html#projects">← All projects</a>
-                        <a href="../index.html#publications">Related publications ↗</a>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer class="site-footer section-shell">
-            <a class="footer-brand" href="../index.html#top">HANEY KANG</a>
-            <span>© 2026 Haney Kang</span>
-            <a class="back-top" href="#main">Back to top ↑</a>
-        </footer>
-    </body>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="VeriKube: graph-based verification for container network policies."><meta name="theme-color" content="#f4f3ef">
+  <script>(() => { try { const t = localStorage.getItem('haney-kang-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (_) {} })();</script>
+  <title>Haney Kang — VeriKube</title><link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/portfolio-detail-overrides.css"><script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html#top" aria-label="Haney Kang — home"><span class="brand-name">HANEY KANG</span></a><div class="header-controls">
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a class="nav-link" href="../index.html#top">Home</a><a class="nav-link active" href="../index.html#projects" aria-current="location">Projects</a><a class="nav-link" href="../index.html#publications">Publications</a><a class="nav-link" href="../index.html#about">About</a><a class="nav-contact" href="../index.html#contact">Get in touch <span>↗</span></a></nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false" title="Switch theme"><svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg><svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.6 8.6 0 1 0 20.2 15.4Z"></path></svg><span class="theme-toggle-label">Theme</span></button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+  </div></div></header>
+  <main id="main">
+    <section class="detail-hero section-shell" aria-labelledby="project-title"><h1 id="project-title">VeriKube<span class="heading-period">.</span></h1><h2>Automated Container Network Policy Verification</h2>
+      <p class="detail-summary">VeriKube introduces a graph-based representation of container network policies to improve the efficiency of policy verification. It supports the complex semantics of Cilium policies while reducing memory consumption and verification overhead.</p>
+      <div class="detail-meta"><div><span>Research Focus</span><span>Cloud-Native Networking</span></div><div><span>Methods &amp; Technologies</span><span>Network Policy · Graph-Based Verification · Cilium</span></div><div><span>Contribution</span><span>Research Conception · Graph-Based Design · Implementation · Evaluation</span></div></div>
+    </section>
+    <div class="detail-content section-shell">
+      <aside class="detail-sidebar" aria-label="On this page"><span>ON THIS PAGE</span><a href="#problem">Problem</a><a href="#approach">Approach</a><a href="#implementation">Implementation</a><a href="#results">Results</a></aside>
+      <div class="detail-main">
+        <section class="detail-section" id="problem"><p class="eyebrow">01 / CHALLENGE</p><h2>Problem</h2>
+          <div class="problem-flow">
+            <article class="problem-step"><span class="problem-step-index">01 / SCALE</span><h3>Growing Policy Relationships</h3><p>Kubernetes workloads and selectors create many overlapping relationships that must be considered during verification.</p></article>
+            <article class="problem-step"><span class="problem-step-index">02 / OVERHEAD</span><h3>Expensive Representation</h3><p>Representing connectivity at individual container-pair granularity can consume substantial memory and computation.</p></article>
+            <article class="problem-step"><span class="problem-step-index">03 / SEMANTICS</span><h3>Expressive Policy Rules</h3><p>Practical systems such as Cilium support rich policy semantics that must be preserved by the verification process.</p></article>
+          </div>
+        </section>
+        <section class="detail-section" id="approach"><p class="eyebrow">02 / DESIGN RATIONALE</p><h2>Approach</h2>
+          <div class="approach-grid">
+            <article class="approach-card"><span class="approach-step-index">01 / REPRESENT</span><h3>Graph-Based Model</h3><p>Group containers with equivalent policy-relevant attributes and represent policy relationships as a graph.</p></article>
+            <article class="approach-card"><span class="approach-step-index">02 / FORMALIZE</span><h3>Logical Translation</h3><p>Translate the relevant graph and policy conditions into logical propositions while preserving their intended semantics.</p></article>
+            <article class="approach-card"><span class="approach-step-index">03 / VERIFY</span><h3>Constraint Solving</h3><p>Use an SMT solver to check the generated propositions and determine whether the requested network conditions hold.</p></article>
+          </div>
+        </section>
+        <section class="detail-section" id="implementation"><p class="eyebrow">03 / SYSTEM ENGINEERING</p><h2>Implementation</h2>
+          <figure class="detail-figure"><img src="../assets/images/verikube.svg" alt="VeriKube architecture showing a Policy Graph Constructor, Interpreter, Verifier, and Kubernetes network policies." width="718" height="404" loading="lazy"><figcaption>Figure 1. High-level architecture of VeriKube.</figcaption></figure>
+          <div class="implementation-grid">
+            <article class="implementation-card"><span class="implementation-index">01</span><h3>Graph Constructor</h3><p>Processes Kubernetes network policy information and builds a graph representation of the relevant container classes and policy relationships.</p><span class="approach-reference">Approach 01 · Represent</span></article>
+            <article class="implementation-card"><span class="implementation-index">02</span><h3>Interpreter</h3><p>Interprets the graph structure and converts applicable policy conditions into logical propositions for formal verification.</p><span class="approach-reference">Approach 02 · Formalize</span></article>
+            <article class="implementation-card"><span class="implementation-index">03</span><h3>Verifier</h3><p>Integrates the Yices2 SMT solver to evaluate the generated propositions and determine whether the specified network policy conditions are satisfied.</p><span class="approach-reference">Approach 03 · Verify</span></article>
+          </div>
+        </section>
+        <section class="detail-section" id="results"><p class="eyebrow">04 / OUTCOMES</p><h2>Results</h2>
+          <div class="results-grid">
+            <article class="result-card"><span class="result-value">≥ 7×</span><span class="result-label">Memory Efficiency</span><span class="result-note">Improvement over the evaluated baseline.</span></article>
+            <article class="result-card"><span class="result-value">≥ 1.5×</span><span class="result-label">Data Management</span><span class="result-note">Faster policy-related data structure management than the evaluated baseline.</span></article>
+            <article class="result-card"><span class="result-value">20,000×</span><span class="result-label">Verification Performance</span><span class="result-note">Reported improvement in network policy verification over the evaluated baseline.</span></article>
+          </div>
+          <p class="detail-note">Performance figures are reported relative to the baseline and experimental conditions described in the VeriKube publication.</p>
+        </section>
+        <div class="detail-footer"><a href="../index.html#projects">← All projects</a><a href="../index.html#publications">Related publication ↗</a></div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer section-shell"><a class="footer-brand" href="../index.html#top">HANEY KANG</a><span>© 2026 Haney Kang</span><a class="back-top" href="#main">Back to top ↑</a></footer>
+</body>
 </html>

@@ -1,142 +1,113 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="BeaCon: runtime evidence for container security policy construction.">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="BeaCon: environment-aware dynamic policy generation for container security.">
         <meta name="theme-color" content="#f4f3ef">
+        <script>
+            (() => { try { const t = localStorage.getItem('haney-kang-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (_) {} })();
+        </script>
         <title>Haney Kang — BeaCon</title>
         <link rel="stylesheet" href="../assets/css/style.css">
-        <script src="../assets/js/main.js" defer>
-        </script>
+        <link rel="stylesheet" href="../assets/css/portfolio-detail-overrides.css">
+        <script src="../assets/js/main.js" defer></script>
     </head>
-
     <body>
         <a class="skip-link" href="#main">Skip to content</a>
-
         <header class="site-header">
             <div class="header-inner">
-                <a class="brand" href="../index.html#top" aria-label="Go to home">
-                    <span class="brand-name">HANEY KANG</span>
-                </a>
-
+                <a class="brand" href="../index.html#top" aria-label="Haney Kang — home"><span class="brand-name">HANEY KANG</span></a>
                 <div class="header-controls">
                     <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
                         <a class="nav-link" href="../index.html#top">Home</a>
-                        <a class="nav-link active" href="../index.html#projects">Projects</a>
+                        <a class="nav-link active" href="../index.html#projects" aria-current="location">Projects</a>
                         <a class="nav-link" href="../index.html#publications">Publications</a>
                         <a class="nav-link" href="../index.html#about">About</a>
-                        <a class="nav-contact" href="../index.html#contact">Get in touch <span>↗</span></a>
+                        <a class="nav-contact" href="../index.html#contact">Get in touch <span aria-hidden="true">↗</span></a>
                     </nav>
-
-                    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme">
-                        <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                            <circle cx="12" cy="12" r="4"></circle>
-                            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
-                        </svg>
-                        <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                            <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.6 8.6 0 1 0 20.2 15.4Z"></path>
-                        </svg>
-                        <span class="theme-toggle-label">Light</span>
-
+                    <button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false" title="Switch theme">
+                        <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+                        <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.6 8.6 0 1 0 20.2 15.4Z"></path></svg>
+                        <span class="theme-toggle-label">Theme</span>
                     </button>
-                    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
-                        <span class="menu-toggle-lines" aria-hidden="true"></span>
-                    </button>
+                    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span class="menu-toggle-lines" aria-hidden="true"></span></button>
                 </div>
             </div>
         </header>
 
         <main id="main">
-            <section class="detail-hero section-shell">
-                <h1>BeaCon<span class="heading-period">.</span></h1>
-                <h3>Environment-Aware Dynamic Policy Generation</h4>
+            <section class="detail-hero section-shell" aria-labelledby="project-title">
+                <h1 id="project-title">BeaCon<span class="heading-period">.</span></h1>
+                <h2>Environment-Aware Dynamic Policy Generation</h2>
                 <p class="detail-summary">BeaCon profiles containers across representative workloads and runtime configurations, collecting dynamic execution evidence using eBPF. It leverages this evidence to generate tunable least-privilege policies, allowing operators to balance attack surface reduction against deployment functionality.</p>
                 <div class="detail-meta">
-                    <div>
-                        <span>Research Focus</span>
-                        <span>Container Security</span>
-                    </div>
-                    <div>
-                        <span>Methods & Technologies</span>
-                        <span>eBPF · Linux Seccomp · Docker · YCSB</span>
-                    </div>
-                    <div>
-                        <span>Contribution</span>
-                        <span>Research Conception · System Architecture · Implementation · Experimental Design & Evaluation</span>
-                    </div>
+                    <div><span>Research Focus</span><span>Container Security</span></div>
+                    <div><span>Methods &amp; Technologies</span><span>eBPF · Runtime Profiling · Policy Synthesis</span></div>
+                    <div><span>Contribution</span><span>Research Conception · System Design · Implementation · Experimental Design</span></div>
                 </div>
             </section>
+
             <div class="detail-content section-shell">
-                <aside class="detail-sidebar">
+                <aside class="detail-sidebar" aria-label="On this page">
                     <span>ON THIS PAGE</span>
                     <a href="#problem">Problem</a>
                     <a href="#approach">Approach</a>
                     <a href="#implementation">Implementation</a>
-                    <a href="#evaluation">Evaluation</a>
+                    <a href="#results">Results</a>
                 </aside>
                 <div class="detail-main">
                     <section class="detail-section" id="problem">
-                        <p class="eyebrow">01 / MOTIVATION</p>
+                        <p class="eyebrow">01 / CHALLENGE</p>
                         <h2>Problem</h2>
-                        <p>Containerized applications do not have a fixed set of system-call requirements. The system calls and capabilities exercised by a container can vary depending on its runtime configuration, workload, and deployment environment.</p>
-                        <p>Conventional dynamic profiling approaches typically generate security policies from observed execution traces. However, a policy derived from a single execution environment may omit system calls required by other intended workloads or configurations. Conversely, simply allowing every observed system call can introduce unnecessary privileges and increase the attack surface.</p>
-                        <p>The challenge is therefore to collect sufficiently representative runtime evidence while balancing security and application availability. BeaCon addresses this problem by exploring container behavior across diverse execution environments and using the collected evidence to construct tunable least-privilege policies.</p>
+                        <div class="problem-flow">
+                            <article class="problem-step"><span class="problem-step-index">01 / CONDITION</span><h3>Environment Diversity</h3><p>The same container can exercise different system calls under different runtime options and workloads.</p></article>
+                            <article class="problem-step"><span class="problem-step-index">02 / LIMITATION</span><h3>Incomplete Evidence</h3><p>A single execution trace may miss required behavior, while aggregating every observation can preserve unnecessary privileges.</p></article>
+                            <article class="problem-step"><span class="problem-step-index">03 / CONSEQUENCE</span><h3>Security–Functionality Trade-off</h3><p>A fixed policy can either restrict intended functionality or expose a broader syscall surface than necessary.</p></article>
+                        </div>
                     </section>
+
                     <section class="detail-section" id="approach">
-                        <p class="eyebrow">02 / APPROACH</p>
+                        <p class="eyebrow">02 / DESIGN RATIONALE</p>
                         <h2>Approach</h2>
-                        <div class="detail-workflow">
-                            <div>
-                                <strong>Observe</strong>
-                                <span>Capture runtime syscall behavior using eBPF-based instrumentation.</span>
-                            </div>
-                            <div>
-                                <strong>Organize</strong>
-                                <span>Represent the collected evidence for downstream policy construction.</span>
-                            </div>
-                            <div>
-                                <strong>Inform</strong>
-                                <span>Use dynamic evidence to help reason about required system-call behavior.</span>
-                            </div>
+                        <div class="approach-grid">
+                            <article class="approach-card"><span class="approach-step-index">01 / EXPLORE</span><h3>Representative Environments</h3><p>Vary container runtime options and workloads to explore execution beyond the default launch configuration.</p></article>
+                            <article class="approach-card"><span class="approach-step-index">02 / OBSERVE</span><h3>Contextual Runtime Evidence</h3><p>Capture system events with eBPF and associate each observation with the environment that triggered it.</p></article>
+                            <article class="approach-card"><span class="approach-step-index">03 / BALANCE</span><h3>Tunable Policy Synthesis</h3><p>Evaluate candidate allowlists against security risk and representative-environment functionality rather than selecting one fixed profile.</p></article>
                         </div>
-                        <p>The system emphasizes evidence gathered from actual container execution rather than relying on image metadata or static assumptions alone.</p>
                     </section>
+
                     <section class="detail-section" id="implementation">
-                        <p class="eyebrow">03 / ENGINEERING</p>
+                        <p class="eyebrow">03 / SYSTEM ENGINEERING</p>
                         <h2>Implementation</h2>
-                        <p>BeaCon is implemented as a modular system that separates environment emulation, runtime monitoring, and policy decision-making.</p>
-                        <ul>
-                            <li>Designed and implemented a runtime evidence collection path for container workloads.</li>
-                            <li>Used eBPF-based instrumentation to observe system-call activity.</li>
-                            <li>Evaluated behavior across container images and workloads, with representative execution being an important experimental consideration.</li>
-                        </ul>
-                        <div class="detail-callout">
-                            <strong>Personal contribution: </strong>
-                            Replace or expand this section with the exact components you designed, implemented, and evaluated. Add an architecture figure or a link to a public artifact if available.
+                        <figure class="detail-figure">
+                            <img src="../assets/images/beacon.svg" alt="BeaCon architecture showing an Environment Generator, Monitoring Agent, and Policy Adjustment component." width="718" height="404" loading="lazy">
+                            <figcaption>Figure 1. High-level architecture of BeaCon.</figcaption>
+                        </figure>
+                        <div class="implementation-grid">
+                            <article class="implementation-card"><span class="implementation-index">01</span><h3>Environment Generator</h3><p>Maintains structured Docker-option and workload data, mutates valid runtime settings, and executes containers across representative environment combinations. YCSB provides repeatable database and web-server workloads.</p><span class="approach-reference">Approach 01 · Explore</span></article>
+                            <article class="implementation-card"><span class="implementation-index">02</span><h3>Monitoring Agent</h3><p>Uses BCC/eBPF instrumentation to observe system-call invocations and capability requests during container execution. Events are stored with their corresponding environment context.</p><span class="approach-reference">Approach 02 · Observe</span></article>
+                            <article class="implementation-card"><span class="implementation-index">03</span><h3>Decision Agent</h3><p>Evaluates candidate policies using a security score informed by known kernel CVEs and a functionality score based on the fraction of representative environments supported by the policy. It produces tunable policy choices along a security–functionality frontier.</p><span class="approach-reference">Approach 03 · Balance</span></article>
                         </div>
+                        <p class="detail-note">BeaCon separates profiling from policy application: environment execution and evidence collection can be performed offline, while the stored evidence supports policy decisions during deployment.</p>
                     </section>
-                    <section class="detail-section" id="evaluation">
-                        <p class="eyebrow">04 / EVALUATION</p>
+
+                    <section class="detail-section" id="results">
+                        <p class="eyebrow">04 / OUTCOMES</p>
                         <h2>Results</h2>
-                        <p>BeaCon was evaluated using official Docker images and representative workloads to investigate runtime evidence coverage, policy quality, and security effectiveness.</p>
-                        <ul>
-                            <li><strong>Environment Coverage: </strong>Evaluated 167 compatible official container images using diverse runtime configurations and workload combinations, demonstrating the importance of collecting execution evidence beyond a single default environment.</li>
-                            <li><strong>Attack Surface Reduction: </strong>In the comparison involving 54 images compatible with all evaluated tools, BeaCon generated policies containing more than 100 fewer system calls than Confine in approximately 80% of the evaluated containers when prioritizing functionality.</li>
-                            <li><strong>Vulnerability Mitigation: </strong></li>
-                        </ul>
+                        <div class="results-grid">
+                            <article class="result-card"><span class="result-value">167</span><span class="result-label">Container Images</span><span class="result-note">Official Docker images used in the main evaluation after compatibility filtering.</span></article>
+                            <article class="result-card"><span class="result-value">~80%</span><span class="result-label">Tighter Policies</span><span class="result-note">For about 80% of 54 comparable images, BeaCon allowed over 100 fewer syscalls than Confine under the functionality-maximizing setting.</span></article>
+                            <article class="result-card"><span class="result-value">71 / 71</span><span class="result-label">CVE-2012-3375 Mitigation</span><span class="result-note">BeaCon mitigated this specific attack path in all 71 evaluated containers; Confine did so in 44%.</span></article>
+                        </div>
+                        <p class="detail-note">The 80% comparison uses the 54-image subset compatible with all evaluated tools. The vulnerability result is specific to CVE-2012-3375 and should not be interpreted as an overall vulnerability mitigation rate.</p>
                     </section>
-                    <div class="detail-footer">
-                        <a href="../index.html#projects">← All projects</a>
-                        <a href="../index.html#publications">Related publications ↗</a>
-                    </div>
+
+                    <div class="detail-footer"><a href="../index.html#projects">← All projects</a><a href="../index.html#publications">Related publication ↗</a></div>
                 </div>
             </div>
         </main>
 
-        <footer class="site-footer section-shell">
-            <a class="footer-brand" href="../index.html#top">HANEY KANG</a>
-            <span>© 2026 Haney Kang</span>
-            <a class="back-top" href="#main">Back to top ↑</a>
-        </footer>
+        <footer class="site-footer section-shell"><a class="footer-brand" href="../index.html#top">HANEY KANG</a><span>© 2026 Haney Kang</span><a class="back-top" href="#main">Back to top ↑</a></footer>
     </body>
 </html>

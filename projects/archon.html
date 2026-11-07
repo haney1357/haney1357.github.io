@@ -1,135 +1,47 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Archon: requirement-driven runtime evidence and architecture-aware security policy reasoning.">
-        <meta name="theme-color" content="#f4f3ef">
-        <title>Haney Kang — Archon</title>
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <script src="../assets/js/main.js" defer>
-        </script>
-    </head>
-
-    <body>
-        <a class="skip-link" href="#main">Skip to content</a>
-
-        <header class="site-header">
-            <div class="header-inner">
-                <a class="brand" href="../index.html#top" aria-label="Go to home">
-                    <span class="brand-name">HANEY KANG</span>
-                </a>
-
-                <div class="header-controls">
-                    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-                        <a class="nav-link" href="../index.html#top">Home</a>
-                        <a class="nav-link active" href="../index.html#projects">Projects</a>
-                        <a class="nav-link" href="../index.html#publications">Publications</a>
-                        <a class="nav-link" href="../index.html#about">About</a>
-                        <a class="nav-contact" href="../index.html#contact">Get in touch <span>↗</span></a>
-                    </nav>
-
-                    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Switch to dark theme">
-                        <svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                            <circle cx="12" cy="12" r="4"></circle>
-                            <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
-                        </svg>
-                        <svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                            <path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.6 8.6 0 1 0 20.2 15.4Z"></path>
-                        </svg>
-                        <span class="theme-toggle-label">Light</span>
-
-                    </button>
-                    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
-                        <span class="menu-toggle-lines" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </header>
-
-        <main id="main">
-            <section class="detail-hero section-shell">
-                <h1>Archon<span class="heading-period">.</span></h1>
-                <h3>Requirement-Guided Runtime Evidence Generation</h4>
-                <p class="detail-summary">Archon connects high-level deployment requirements to syscall-level evidence by analyzing program structure and identifying requirement-related behaviors. It generates and iteratively refines workload and environment plans to activate these behaviors, then traces execution to classify syscalls as evidence-supported, unconfirmed, or unsupported.</p>
-                <div class="detail-meta">
-                    <div>
-                        <span>Research Focus</span>
-                        <span>Security architecture</span>
-                    </div>
-                    <div>
-                        <span>Methods & technology</span>
-                        <span>Requirements · Runtime evidence</span>
-                    </div>
-                    <div>
-                        <span>Contribution</span>
-                        <span>System design and implementation</span>
-                    </div>
-                </div>
-            </section>
-            <div class="detail-content section-shell">
-                <aside class="detail-sidebar">
-                    <span>ON THIS PAGE</span>
-                    <a href="#problem">Problem</a>
-                    <a href="#approach">Approach</a>
-                    <a href="#implementation">Implementation</a>
-                    <a href="#evaluation">Evaluation</a>
-                </aside>
-                <div class="detail-main">
-                    <section class="detail-section" id="problem">
-                        <p class="eyebrow">01 / MOTIVATION</p>
-                        <h2>Problem</h2>
-                        <p>Observed execution is useful evidence, but it does not always reveal every intended behavior or the requirements imposed by a system's architecture. A policy-generation method may therefore need to reason about more than traces alone.</p>
-                        <p>Archon explores the role of explicit requirements and architecture-aware context in constructing runtime security evidence and policies.</p>
-                    </section>
-                    <section class="detail-section" id="approach">
-                        <p class="eyebrow">02 / APPROACH</p>
-                        <h2>Approach</h2>
-                        <div class="detail-workflow">
-                            <div>
-                                <strong>Requirements</strong>
-                                <span>Represent intended behavior and constraints explicitly.</span>
-                            </div>
-                            <div>
-                                <strong>Architecture</strong>
-                                <span>Relate system components and their expected interactions.</span>
-                            </div>
-                            <div>
-                                <strong>Evidence</strong>
-                                <span>Use runtime observations to support policy reasoning and validation.</span>
-                            </div>
-                        </div>
-                        <p>Use this section to describe the specific architecture model, evidence sources, and policy-construction logic that were implemented in the project.</p>
-                    </section>
-                    <section class="detail-section" id="implementation">
-                        <p class="eyebrow">03 / ENGINEERING</p>
-                        <h2>Implementation</h2>
-                        <ul>
-                            <li>Describe the system components and how information flows between them.</li>
-                            <li>Explain how requirements and architecture information are represented.</li>
-                            <li>Identify the runtime evidence collection and validation components.</li>
-                        </ul>
-                        <div class="detail-callout">
-                            <strong>Clarify the scope: </strong>
-                            Separate implemented capabilities from proposed or partially evaluated ideas. A candid account of limitations makes the engineering story stronger.
-                        </div>
-                    </section>
-                    <section class="detail-section" id="evaluation">
-                        <p class="eyebrow">04 / EVALUATION</p>
-                        <h2>Evaluation</h2>
-                        <p>Summarize the experiments that were completed, the evidence they provide, and what remains unverified. If the evaluation is preliminary, describe it as such rather than implying a stronger result than the data supports.</p>
-                    </section>
-                    <div class="detail-footer">
-                        <a href="../index.html#projects">← All projects</a>
-                        <a href="../index.html#publications">Related publications ↗</a>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <footer class="site-footer section-shell">
-            <a class="footer-brand" href="../index.html#top">HANEY KANG</a>
-            <span>© 2026 Haney Kang</span>
-            <a class="back-top" href="#main">Back to top ↑</a>
-        </footer>
-    </body>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Archon: requirement-guided runtime evidence generation for Seccomp policy decisions."><meta name="theme-color" content="#f4f3ef">
+  <script>(() => { try { const t = localStorage.getItem('haney-kang-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (_) {} })();</script>
+  <title>Haney Kang — Archon</title><link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/portfolio-detail-overrides.css"><script src="../assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="../index.html#top" aria-label="Haney Kang — home"><span class="brand-name">HANEY KANG</span></a><div class="header-controls">
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a class="nav-link" href="../index.html#top">Home</a><a class="nav-link active" href="../index.html#projects" aria-current="location">Projects</a><a class="nav-link" href="../index.html#publications">Publications</a><a class="nav-link" href="../index.html#about">About</a><a class="nav-contact" href="../index.html#contact">Get in touch <span>↗</span></a></nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" aria-pressed="false" title="Switch theme"><svg class="theme-icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg><svg class="theme-icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.6 8.6 0 1 0 20.2 15.4Z"></path></svg><span class="theme-toggle-label">Theme</span></button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"><span class="menu-toggle-lines" aria-hidden="true"></span></button>
+  </div></div></header>
+  <main id="main">
+    <section class="detail-hero section-shell" aria-labelledby="project-title"><h1 id="project-title">Archon<span class="heading-period">.</span></h1><h2>Requirement-Guided Runtime Evidence Generation</h2>
+      <p class="detail-summary">Archon connects high-level deployment requirements to syscall-level evidence by analyzing program structure and identifying requirement-related behaviors. It generates and iteratively refines workload and environment plans to activate these behaviors, then traces execution to classify syscalls as evidence-supported, unconfirmed, or unsupported.</p>
+      <div class="detail-meta"><div><span>Research Focus</span><span>Requirement-Guided Runtime Evidence</span></div><div><span>Methods &amp; Technologies</span><span>Binary Analysis · Behavior Activation · Runtime Tracing</span></div><div><span>Contribution</span><span>Research Conception · Problem Formulation · System Architecture</span></div></div>
+    </section>
+    <div class="detail-content section-shell">
+      <aside class="detail-sidebar" aria-label="On this page"><span>ON THIS PAGE</span><a href="#problem">Problem</a><a href="#approach">Approach</a></aside>
+      <div class="detail-main">
+        <section class="detail-section" id="problem"><p class="eyebrow">01 / CHALLENGE</p><h2>Problem</h2>
+          <div class="problem-flow">
+            <article class="problem-step"><span class="problem-step-index">01 / REQUIREMENT</span><h3>High-Level Intent</h3><p>Deployment requirements describe functionality such as HTTP/3 support, TLS serving, or reverse-proxy behavior.</p></article>
+            <article class="problem-step"><span class="problem-step-index">02 / GAP</span><h3>Behavior–Syscall Gap</h3><p>A functional requirement does not directly identify the executable code paths or system calls that realize it.</p></article>
+            <article class="problem-step"><span class="problem-step-index">03 / AMBIGUITY</span><h3>Incomplete Evidence</h3><p>Static reachability can include irrelevant features, while generic traces may fail to activate the behavior required by the deployment.</p></article>
+          </div>
+        </section>
+        <section class="detail-section" id="approach"><p class="eyebrow">02 / CONCEPTUAL APPROACH</p><h2>Approach</h2>
+          <div class="approach-grid">
+            <article class="approach-card"><span class="approach-step-index">01 / MODEL</span><h3>Requirement-Related Behavior</h3><p>Use behavior clusters over a semantic reachability graph as an intermediate representation between high-level requirements and low-level program execution.</p></article>
+            <article class="approach-card"><span class="approach-step-index">02 / ACTIVATE</span><h3>Targeted Execution Plans</h3><p>Generate workload and environment plans intended to exercise selected behavior clusters, then refine activation hypotheses using execution feedback.</p></article>
+            <article class="approach-card"><span class="approach-step-index">03 / EVIDENCE</span><h3>Requirement-Specific Tracing</h3><p>Trace execution and associate observed syscalls with selected behaviors, distinguishing evidence-supported, unconfirmed, and unsupported candidates.</p></article>
+          </div>
+          <figure class="detail-figure"><img src="../assets/images/archon.svg" alt="Archon conceptual architecture showing Behavior, Activation, and Evidence layers." width="718" height="404" loading="lazy"><figcaption>Figure 1. Conceptual workflow of Archon.</figcaption></figure>
+          <p class="detail-note">Archon is intended to improve the evidence available for downstream Seccomp policy decisions. An unobserved syscall is not treated as proof that the syscall is unnecessary.</p>
+        </section>
+        <div class="detail-footer"><a href="../index.html#projects">← All projects</a><span>Early-stage research direction</span></div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer section-shell"><a class="footer-brand" href="../index.html#top">HANEY KANG</a><span>© 2026 Haney Kang</span><a class="back-top" href="#main">Back to top ↑</a></footer>
+</body>
 </html>

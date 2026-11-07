@@ -1,0 +1,231 @@
+/* Portfolio detail-page visual system and publication-aligned Home intro.
+   Load after assets/css/style.css. */
+
+/* Home intro: full-width band, centered content shell like Publications. */
+.intro-section {
+  width: 100%;
+  margin-inline: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper-deep);
+}
+.intro-section-inner {
+  width: min(var(--shell, 1280px), calc(100% - 64px));
+  margin-inline: auto;
+  padding: 90px 0;
+}
+.intro { padding: 0; }
+.intro-title {
+  max-width: 1000px;
+  margin-bottom: 26px;
+  font-size: clamp(44px, 6.2vw, 78px);
+  font-weight: 600;
+  letter-spacing: -.06em;
+  line-height: 1.08;
+}
+.intro-line { display: block; }
+.intro-summary {
+  max-width: 850px;
+  margin-bottom: 30px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.85;
+}
+.intro-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.intro-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 54px;
+  margin-top: 56px;
+}
+.intro-meta-group { display: grid; gap: 5px; }
+.intro-meta-group > span:not(.meta-label) {
+  color: var(--ink-soft);
+  font-size: 16px;
+}
+
+/* Detail hero metadata uses the exact category names from the project cards. */
+.detail-hero h2 {
+  margin: -4px 0 16px;
+  color: var(--ink-soft);
+  font-family: var(--display);
+  font-size: clamp(20px, 2.2vw, 27px);
+  font-weight: 550;
+  letter-spacing: -.025em;
+  line-height: 1.35;
+}
+.detail-summary { max-width: 850px; }
+.detail-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+.detail-meta > div { min-width: 0; }
+.detail-meta span:last-child { overflow-wrap: anywhere; }
+
+/* Reusable visuals: challenge flow, design cards, architecture figure and KPI tiles. */
+.detail-figure {
+  margin: 22px 0 18px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.detail-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.detail-figure figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.problem-flow,
+.approach-grid,
+.implementation-grid,
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 22px 0 8px;
+}
+.problem-step,
+.implementation-card,
+.result-card {
+  min-width: 0;
+  padding: 17px 16px 18px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.problem-step { position: relative; }
+.problem-step:not(:last-child)::after {
+  position: absolute;
+  top: 50%;
+  right: -11px;
+  z-index: 2;
+  display: grid;
+  width: 18px;
+  height: 18px;
+  place-items: center;
+  background: var(--paper-deep);
+  color: var(--blue);
+  content: '→';
+  font-size: 16px;
+  transform: translateY(-50%);
+}
+.problem-step-index,
+.approach-step-index,
+.implementation-index {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--blue);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: .08em;
+}
+.problem-step h3,
+.approach-card h3,
+.implementation-card h3 {
+  margin: 0 0 7px;
+  color: var(--ink-soft);
+  font-size: 17px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+.problem-step p,
+.approach-card p,
+.implementation-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.approach-card {
+  min-width: 0;
+  padding: 18px 17px;
+  border-top: 2px solid var(--blue);
+  background: var(--paper-deep);
+}
+.approach-card h3 { font-size: 18px; }
+.implementation-card h3 { font-size: 16px; }
+.approach-reference {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 4px 7px;
+  border: 1px solid var(--line);
+  color: var(--blue-dark);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .03em;
+}
+.results-grid { margin-top: 22px; }
+.result-card {
+  padding: 19px 18px;
+  background: var(--paper-deep);
+}
+.result-value {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--blue);
+  font-family: var(--display);
+  font-size: clamp(28px, 3.4vw, 43px);
+  font-weight: 700;
+  letter-spacing: -.045em;
+  line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+.result-label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.result-note {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.detail-note {
+  margin-top: 14px !important;
+  color: var(--muted);
+  font-size: 13px !important;
+  line-height: 1.65 !important;
+}
+
+@media (max-width: 760px) {
+  .intro-section-inner {
+    width: calc(100% - 40px);
+    padding: 72px 0;
+  }
+  .intro-title { font-size: clamp(39px, 10.5vw, 56px); }
+  .intro-summary { font-size: 17px; }
+  .intro-meta { gap: 30px; margin-top: 40px; }
+  .detail-meta,
+  .problem-flow,
+  .approach-grid,
+  .implementation-grid,
+  .results-grid { grid-template-columns: minmax(0, 1fr); }
+  .problem-step:not(:last-child)::after {
+    top: auto;
+    right: 50%;
+    bottom: -17px;
+    transform: translateX(50%) rotate(90deg);
+  }
+  .detail-figure { padding: 8px; }
+}
+@media (max-width: 420px) {
+  .intro-section-inner { width: calc(100% - 32px); }
+  .intro-title { font-size: clamp(35px, 10.2vw, 43px); }
+}
