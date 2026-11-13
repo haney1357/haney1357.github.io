@@ -437,6 +437,10 @@ html[data-theme="dark"] .profile-photo-frame {
   border-top: 1px solid var(--line);
 }
 
+.contact-links > .resume-link {
+    grid-column: 1 / -1;
+}
+
 .contact-link {
   display: grid;
   grid-template-columns: 44px minmax(0, 1fr);
